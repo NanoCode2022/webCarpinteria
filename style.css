@@ -1,0 +1,149 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.header{
+  width: 100%;
+  height: calc(100vh - 200px);
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  background-image: url(./images/wood2.jpg);
+  padding: 0!important;
+  overflow: auto;
+}
+
+.titleHome{
+  font-size: 3em;
+}
+
+.descriptionHome{
+  color: #dbdada;
+  width: 50%;
+}
+
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+  max-width: 100%!important;
+}
+
+.navbar{
+  background-color: transparent;
+}
+
+
+
+.accordion-item{
+  width: 75%;
+}
+
+.headerCurso{
+  width: 100%;
+  height: 40%;
+  background-image: url(./images/Ebanisteria-cortijo-banner.jpg);
+  background-size: cover;
+}
+
+.accordion-button{
+  background: #3f9e0059!important;
+}
+
+.accordion-body{
+  background: #3f9e0041!important;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #00c8501a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spanFooter{
+  color: #c4c4c4;
+}
+
+.containerGaleria{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+  grid-template-rows: 150px;
+  gap: 8px;
+}
+
+.containerImg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 8px;
+}
+
+.containerQS p{
+  background-color: #0000008f;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+
+
+.containerForm{
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#formulario{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.input{
+  width: 300px;
+  height: 30px;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  background: #3f9e0041;
+  outline: none;
+}
+
+textarea{
+  background-color: #3f9e0041;
+  outline: none;
+}
+
+label{
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+#btnEnviar{
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  background-color: #0000008f;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+
+@media only screen and (max-width:420px){
+  .descriptionHome{
+    width: 100%!important;
+  }
+}
+
+
+
+
+
