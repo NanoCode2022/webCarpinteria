@@ -1,7 +1,9 @@
 *{
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: 'Courier New', Courier, monospace;
+  color: black;
 }
 
 .header{
@@ -12,7 +14,7 @@
 .container{
   width: 100%;
   min-height: 100vh;
-  background-image: url(./images/wood2.jpg);
+  background-color: #f1f1f1;
   padding: 0!important;
   overflow: auto;
 }
@@ -23,11 +25,17 @@
 }
 
 .descriptionHome{
-  color: #dbdada;
   width: 50%;
   font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
 }
-
+.containerPhotosHome{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,500px);
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
 .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
   max-width: 100%!important;
 }
@@ -45,16 +53,17 @@
 .headerCurso{
   width: 100%;
   height: 40%;
-  background-image: url(./images/Ebanisteria-cortijo-banner.jpg);
+  text-align: center;
+  /* background-image: url(./images/Ebanisteria-cortijo-banner.jpg); */
   background-size: cover;
 }
 
 .accordion-button{
-  background: #3f9e0059!important;
+  font-size: 1.1rem!important;
 }
 
 .accordion-body{
-  background: #3f9e0041!important;
+  font-size: 1.1rem!important;
 }
 
 .footer{
@@ -65,27 +74,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
 .spanFooter{
   color: #c4c4c4;
 }
 
-/* .containerGaleria{
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
-  grid-template-rows: 1fr;
-  gap: 8px;
+.spanFooterTitle{
+  color: white;
 }
 
-.containerImg img{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  padding: 8px;
-} */
 
 .galeria{
   width: 90%;
@@ -93,7 +92,7 @@
   overflow: hidden;
   padding: 60px 0;
   display: flex;
-  gap: 20px;
+  gap: 50px;
   flex-wrap: wrap;
 }
 
@@ -108,8 +107,15 @@
   object-fit: cover;
 }
 
+.titleImage{
+  width: 100%;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+
 .containerQS p{
-  background-color: #0000008f;
   padding: 12px;
   border-radius: 10px;
 }
@@ -122,6 +128,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .headerForm{
@@ -162,17 +169,11 @@
   height: 30px;
   padding: 0 10px;
   margin-bottom: 20px;
-  background: #3f9e0041;
-  outline: none;
-}
 
-textarea{
-  background-color: #3f9e0041;
-  outline: none;
 }
 
 label{
-  font-size: 14px;
+  font-size: 1rem;
   margin-bottom: 10px;
 }
 
@@ -180,7 +181,7 @@ label{
   width: 100%;
   height: 40px;
   color: #fff;
-  background-color: #0000008f;
+  background-color: #000000;
   margin-top: 20px;
   border-radius: 10px;
 }
@@ -202,6 +203,10 @@ label{
 @media only screen and (max-width:420px){
   .descriptionHome{
     width: 100%!important;
+  }
+
+  .containerPhotosHome{
+    grid-template-columns: repeat(auto-fill,90%);
   }
 
   .headerForm{
