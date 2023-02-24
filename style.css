@@ -2,7 +2,8 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Courier New', Courier, monospace;
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-family: sans-serif;
   color: black;
 }
 
@@ -11,30 +12,37 @@
   min-height: calc(100vh - 200px);
 }
 
+.home{
+  display: flex;
+}
+
 .container{
   width: 100%;
   min-height: 100vh;
-  background-color: #f1f1f1;
+  background-color: #f9efdf;
   padding: 0!important;
   overflow: auto;
 }
 
 .titleHome{
   font-size: 3em;
-  font-family: 'Courier New', Courier, monospace;
+  /* font-family: 'Courier New', Courier, monospace; */
 }
 
 .descriptionHome{
   width: 50%;
-  font-family: 'Courier New', Courier, monospace;
+  /* font-family: 'Courier New', Courier, monospace; */
   font-size: 1.5rem;
 }
 .containerPhotosHome{
   width: 100%;
-  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: grid;
   grid-template-columns: repeat(auto-fill,500px);
   justify-content: space-evenly;
-  margin-top: 30px;
+  margin-top: 30px; */
 }
 .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
   max-width: 100%!important;
@@ -87,17 +95,22 @@
 
 
 .galeria{
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   overflow: hidden;
   padding: 60px 0;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 400px);
+  justify-content: center;
+  grid-template-rows: 500px;
   gap: 50px;
-  flex-wrap: wrap;
+  /* display: flex;
+  gap: 50px;
+  flex-wrap: wrap; */
 }
 
 .galeryPicture{
-  min-width: 200px;
+  min-width: 250px;
   flex: 350px;
   height: 400px;
 }
@@ -192,6 +205,15 @@ label{
     flex-direction: column;
   }
 
+  .galeria{
+    grid-template-columns: repeat(auto-fill, auto);
+  }
+
+
+  .home{
+    flex-direction: column;
+  }
+
   
 
   #mapa{
@@ -207,6 +229,10 @@ label{
 
   .containerPhotosHome{
     grid-template-columns: repeat(auto-fill,90%);
+  }
+
+  .galeria{
+    grid-template-columns: repeat(auto-fill, 100%);
   }
 
   .headerForm{
