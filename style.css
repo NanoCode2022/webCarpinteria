@@ -2,7 +2,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  /* font-family: 'Courier New', Courier, monospace; */
   font-family: sans-serif;
   color: black;
 }
@@ -12,6 +11,10 @@
   min-height: calc(100vh - 200px);
 }
 
+.pictureQS{
+  width: 200px;
+  height: 300px;
+}
 .home{
   display: flex;
 }
@@ -26,12 +29,10 @@
 
 .titleHome{
   font-size: 3em;
-  /* font-family: 'Courier New', Courier, monospace; */
 }
 
 .descriptionHome{
   width: 50%;
-  /* font-family: 'Courier New', Courier, monospace; */
   font-size: 1.5rem;
 }
 .containerPhotosHome{
@@ -39,10 +40,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* display: grid;
-  grid-template-columns: repeat(auto-fill,500px);
-  justify-content: space-evenly;
-  margin-top: 30px; */
 }
 .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
   max-width: 100%!important;
@@ -62,16 +59,22 @@
   width: 100%;
   height: 40%;
   text-align: center;
-  /* background-image: url(./images/Ebanisteria-cortijo-banner.jpg); */
   background-size: cover;
 }
 
 .accordion-button{
-  font-size: 1.1rem!important;
+  font-size: 1.2rem!important;
+  background-color: #f0e9dd!important;
+  border: 0!important;
+}
+
+.accordion-button:focus{
+  box-shadow: 0 0 0 0.25rem #d3cec5d7!important;
 }
 
 .accordion-body{
-  font-size: 1.1rem!important;
+  font-size: 1.2rem!important;
+  background-color: #f5ede1!important;
 }
 
 .footer{
@@ -104,9 +107,6 @@
   justify-content: center;
   grid-template-rows: 500px;
   gap: 50px;
-  /* display: flex;
-  gap: 50px;
-  flex-wrap: wrap; */
 }
 
 .galeryPicture{
@@ -131,6 +131,7 @@
 .containerQS p{
   padding: 12px;
   border-radius: 10px;
+  font-size: 1.2rem;
 }
 
 
@@ -204,6 +205,16 @@ label{
   .headerForm{
     flex-direction: column;
   }
+
+.containerQ{
+  flex-direction: column;
+}
+
+
+
+.pictureQS img{
+  object-fit: contain;
+}
 
   .galeria{
     grid-template-columns: repeat(auto-fill, auto);
