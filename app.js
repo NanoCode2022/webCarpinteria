@@ -31,7 +31,7 @@ async function handlesubmit(event){
 }
 
 function iniciarMap(){
-    let coord = {lat:-34.5603843, lng:-58.4758736};
+    let coord = {lat:-34.5603042, lng:-58.475772};
     let map = new google.maps.Map(document.getElementById('mapa'),{
         zoom: 12,
         center: coord
